@@ -33,15 +33,15 @@
                 @csrf
                 <h4>Euler Mejorado</h4>
                 <label>Función (en términos de x y y):</label>
-                <input type="text" name="funcion" class="form-control" required>
+                <input type="text" name="funcion" class="form-control" required placeholder="Ej: y - x^2 + 1">
                 <label>x0:</label>
-                <input type="number" step="any" name="x0" class="form-control" required>
+                <input type="number" step="any" name="x0" class="form-control" required placeholder="Ej: 0">
                 <label>y0:</label>
-                <input type="number" step="any" name="y0" class="form-control" required>
+                <input type="number" step="any" name="y0" class="form-control" required placeholder="Ej: 0.5">
                 <label>h (paso):</label>
-                <input type="number" step="any" name="h" class="form-control" required>
+                <input type="number" step="any" name="h" class="form-control" required placeholder="Ej: 0.2">
                 <label>xf:</label>
-                <input type="number" step="any" name="xf" class="form-control" required>
+                <input type="number" step="any" name="xf" class="form-control" required placeholder="Ej: 2">
                 <button type="submit" class="btn btn-primary mt-2">Calcular</button>
             </form>
         </div>
@@ -52,15 +52,15 @@
                 @csrf
                 <h4>Runge-Kutta (4to orden)</h4>
                 <label>Función (en términos de x y y):</label>
-                <input type="text" name="funcion" class="form-control" required>
+                <input type="text" name="funcion" class="form-control" required placeholder="Ej: y - x^2 + 1">
                 <label>x0:</label>
-                <input type="number" step="any" name="x0" class="form-control" required>
+                <input type="number" step="any" name="x0" class="form-control" required placeholder="Ej: 0">
                 <label>y0:</label>
-                <input type="number" step="any" name="y0" class="form-control" required>
+                <input type="number" step="any" name="y0" class="form-control" required placeholder="Ej: 0.5">
                 <label>h (paso):</label>
-                <input type="number" step="any" name="h" class="form-control" required>
+                <input type="number" step="any" name="h" class="form-control" required placeholder="Ej: 0.2">
                 <label>xf:</label>
-                <input type="number" step="any" name="xf" class="form-control" required>
+                <input type="number" step="any" name="xf" class="form-control" required placeholder="Ej: 2">
                 <button type="submit" class="btn btn-primary mt-2">Calcular</button>
             </form>
         </div>
@@ -71,15 +71,15 @@
                 @csrf
                 <h4>Newton-Raphson</h4>
                 <label>Función (en términos de x):</label>
-                <input type="text" name="funcion" class="form-control" required>
+                <input type="text" name="funcion" class="form-control" required placeholder="Ej: x^3 - x - 2">
                 <label>Derivada de la función:</label>
-                <input type="text" name="derivada" class="form-control" required>
+                <input type="text" name="derivada" class="form-control" required placeholder="Ej: 3*x^2 - 1">
                 <label>x0:</label>
-                <input type="number" step="any" name="x0" class="form-control" required>
+                <input type="number" step="any" name="x0" class="form-control" required placeholder="Ej: 1">
                 <label>Tolerancia:</label>
-                <input type="number" step="any" name="tol" class="form-control" required>
+                <input type="number" step="any" name="tol" class="form-control" required placeholder="Ej: 0.0001">
                 <label>Iteraciones máximas:</label>
-                <input type="number" name="iter" class="form-control" required>
+                <input type="number" name="iter" class="form-control" required placeholder="Ej: 100">
                 <button type="submit" class="btn btn-primary mt-2">Calcular</button>
             </form>
         </div>
