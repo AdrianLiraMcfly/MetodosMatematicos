@@ -7,17 +7,17 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="container mt-4">
-    <h2>Resultados</h2>
+    <h2 class="display-4">Resultados</h2>
     <table class="table table-bordered">
         <thead>
             <tr>
                 @if(isset($resultados[0]['iter']))
-                    <th>Iteración</th>
-                    <th>x</th>
-                    <th>Error</th>
+                    <th class="h4">Iteración</th>
+                    <th class="h4">x</th>
+                    <th class="h4">Error</th>
                 @else
-                    <th>x</th>
-                    <th>y</th>
+                    <th class="h4">x</th>
+                    <th class="h4">y</th>
                 @endif
             </tr>
         </thead>
@@ -25,17 +25,17 @@
             @foreach($resultados as $dato)
                 <tr>
                     @if(isset($dato['iter']))
-                        <td>{{ $dato['iter'] }}</td>
-                        <td>{{ $dato['x'] }}</td>
-                        <td>{{ $dato['error'] }}</td>
+                        <td class="h5">{{ $dato['iter'] }}</td>
+                        <td class="h5">{{ $dato['x'] }}</td>
+                        <td class="h5">{{ $dato['error'] }}</td>
                     @else
-                        <td>{{ $dato['x'] }}</td>
-                        <td>{{ $dato['y'] }}</td>
+                        <td class="h5">{{ $dato['x'] }}</td>
+                        <td class="h5">{{ $dato['y'] }}</td>
                     @endif
                 </tr>
             @endforeach
         </tbody>
     </table>
-    <a href="/" class="btn btn-primary">Volver</a>
+    <a href="/" class="btn btn-primary btn-lg">Volver</a>
 </body>
 </html>

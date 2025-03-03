@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Métodos Numéricos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-size: 1.25rem; /* Aumenta el tamaño de la fuente */
+        }
+    </style>
 </head>
 <body class="container mt-4">
     <h2>Métodos Numéricos</h2>
