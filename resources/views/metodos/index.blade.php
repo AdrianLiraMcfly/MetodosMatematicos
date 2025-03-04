@@ -33,7 +33,7 @@
                 @csrf
                 <h4>Euler Mejorado</h4>
                 <label>Función (en términos de x y y):</label>
-                <input type="text" name="funcion" class="form-control" required placeholder="Ej: y - x^2 + 1">
+                <input type="text" name="funcion" class="form-control" required placeholder="Ej: y-x^2+1">
                 <label>x0:</label>
                 <input type="number" step="any" name="x0" class="form-control" required placeholder="Ej: 0">
                 <label>y0:</label>
@@ -52,7 +52,7 @@
                 @csrf
                 <h4>Runge-Kutta (4to orden)</h4>
                 <label>Función (en términos de x y y):</label>
-                <input type="text" name="funcion" class="form-control" required placeholder="Ej: y - x^2 + 1">
+                <input type="text" name="funcion" class="form-control" required placeholder="Ej: y-x^2+1">
                 <label>x0:</label>
                 <input type="number" step="any" name="x0" class="form-control" required placeholder="Ej: 0">
                 <label>y0:</label>
@@ -71,9 +71,9 @@
                 @csrf
                 <h4>Newton-Raphson</h4>
                 <label>Función (en términos de x):</label>
-                <input type="text" name="funcion" class="form-control" required placeholder="Ej: x^3 - x - 2">
+                <input type="text" name="funcion" class="form-control" required placeholder="Ej:x^3-x-2">
                 <label>Derivada de la función:</label>
-                <input type="text" name="derivada" class="form-control" required placeholder="Ej: 3*x^2 - 1">
+                <input type="text" name="derivada" class="form-control" required placeholder="Ej: 3*x^2-1">
                 <label>x0:</label>
                 <input type="number" step="any" name="x0" class="form-control" required placeholder="Ej: 1">
                 <label>Tolerancia:</label>
